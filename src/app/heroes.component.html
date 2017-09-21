@@ -1,0 +1,10 @@
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <!-- * indicates li and children are the template for each item -->
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<toh-hero-detail [hero]="selectedHero"></toh-hero-detail>
