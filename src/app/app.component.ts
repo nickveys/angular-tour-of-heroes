@@ -19,7 +19,7 @@ const HEROES: Hero[] = [
 ];
 
 @Component({
-  selector: 'app-root',
+  selector: 'toh-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
